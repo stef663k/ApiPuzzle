@@ -1215,11 +1215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StartProjectApi\\StartProjectApi.csproj",
+      "projectUniqueName": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StortProjectApi\\StartProjectApi.csproj",
       "projectName": "StartProjectApi",
-      "projectPath": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StartProjectApi\\StartProjectApi.csproj",
+      "projectPath": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StortProjectApi\\StartProjectApi.csproj",
       "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StartProjectApi\\obj\\",
+      "outputPath": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StortProjectApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

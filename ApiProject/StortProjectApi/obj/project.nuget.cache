@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LI56GjRLCbpWi8gqS6HKqfCfyBKBUlB1CJ7xaQa4kWtDNLHr3mCx7y+0zTFXl3wVYmiidL5J30FhOgIgXoo3gA==",
+  "dgSpecHash": "o5hCl4shKX3HR93nIBcrI8Z1AeFVZASqxp5SZGTugEe7D8lcEiTCVOyufrTFCOiTY+0X4i6EZ3UAcfH5S2jTMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StartProjectApi\\StartProjectApi.csproj",
+  "projectFilePath": "C:\\Users\\Stefan\\Desktop\\Stort Project\\ApiProject\\StortProjectApi\\StartProjectApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stefan\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Stefan\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
