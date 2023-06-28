@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StortProjectApi.Configuration;
+namespace StortProjectApi.Models;
 
-public class DatabaseSettings
+public class DatabaseModel
 {
     public string ConnectionString { get; set; } = null!;
     public string DatabaseName { get; set; } = null!;

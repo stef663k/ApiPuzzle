@@ -1,9 +1,12 @@
-using StortProjectApi.Configuration;
+using StortProjectApi.Models;
+using StortProjectApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection(key:"MongoDatabase"));
+builder.Services.Configure<DatabaseModel>(builder.Configuration.GetSection(key:"MongoDatabase"));
+builder.Services.AddSingleton<HighscoreService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
