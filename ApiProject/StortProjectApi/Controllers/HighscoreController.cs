@@ -6,7 +6,7 @@ using StortProjectApi.Services;
 namespace StortProjectApi.Controllers;
 
 [Controller]
-[Route("api/[controller]")]
+[Route("/")]
 public class HighscoreController: Controller
 {
     private readonly HighscoreService _service;

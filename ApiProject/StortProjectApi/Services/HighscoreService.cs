@@ -20,18 +20,21 @@ public class HighscoreService
     }
 
     public async Task CreateHighScore(HighscoreModel model){
-        await _highscoreCollection.InsertOneAsync(model);
-        return;
+        try{
+            await _highscoreCollection.InsertOneAsync(model);
+            return;
+        }
+        catch{
+            throw;
+        }
     }
 
    public async Task<List<HighscoreModel>> GetHighScoreList()
 {
-    try
-    {
+    try{
         return await _highscoreCollection.Find(new BsonDocument()).ToListAsync();
     }
-    catch
-    {
+    catch{
         throw;
     }
 }
