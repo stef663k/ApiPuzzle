@@ -17,6 +17,7 @@ public class HighscoreController: Controller
     }
 
     [HttpGet]
+    [Route("api/Highscores")]
     public async Task<List<HighscoreModel>> GetHighscoresAsync() {
         return await _service.GetHighScoreList();
     }
