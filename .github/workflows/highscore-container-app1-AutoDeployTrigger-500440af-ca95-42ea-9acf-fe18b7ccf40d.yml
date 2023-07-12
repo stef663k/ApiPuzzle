@@ -1,0 +1,42 @@
+name: Trigger auto deployment for highscore-container-app1
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ main ]
+    paths:
+    - '**'
+    - '.github/workflows/highscore-container-app1-AutoDeployTrigger-500440af-ca95-42ea-9acf-fe18b7ccf40d.yml'
+
+  # Allow mannually trigger 
+  workflow_dispatch:
+      
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.HIGHSCORECONTAINERAPP1_AZURE_CREDENTIALS }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          appSourcePath: ${{ github.workspace }} 
+          registryUrl: startprojectapi20230711103428.azurecr.io
+          registryUsername: ${{ secrets.HIGHSCORECONTAINERAPP1_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.HIGHSCORECONTAINERAPP1_REGISTRY_PASSWORD }}
+          containerAppName: highscore-container-app1
+          resourceGroup: containerhighscoreapp
+          imageToBuild: startprojectapi20230711103428.azurecr.io/highscore-container-app1:${{ github.sha }}
+          
+
+     
+
